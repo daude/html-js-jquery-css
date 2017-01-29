@@ -1,0 +1,44 @@
+list 
+
+ (unordered list)
+tags:- <ul>
+
+<li>  </li>
+
+</ul>
+
+attributes:- type 
+
+(ordred list)
+
+ tags:- <ol>
+
+<li>   </li>
+
+</ol>
+
+attributes:- type          
+
+ *for example* 
+
+<html>
+<head >
+<title> unordered list
+ </title>
+</head>
+<body>
+<h1>unhordered list </h1>
+ <ul type="square"> 
+<li> apple </li>
+<li>mango </li>
+</ul>
+
+<h1> ordered list </h1>
+<ol type="a">
+<li>apple </li>
+<li> mango</li>
+</ol>
+
+</html>
+
+

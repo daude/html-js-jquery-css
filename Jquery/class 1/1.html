@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#first,#second{
+			width: 500px;
+			background-color: #dcc;
+/*			padding: 70px;
+*/			border: 2px solid green;
+            border-radius: 10px;
+            text-align: center;
+            color: red;
+            font-size: 40px;
+		}
+		#second{
+/*			padding: 70px;
+*/			display: none;
+		}
+	</style>
+	<script type="text/javascript" 
+	src="jquery-3.1.1.js">
+		</script>
+	   <script type="text/javascript">
+	   	/*$(document).ready(function(){
+	   		$('#first').click(function(){
+	   			$('#second').slideDown(2000);
+	   		});
+$('#first').click(function(){
+	   			$('#second').slideUp(2000);
+	   	});*/
+
+$(document).ready(function(){
+	   		$('#first').click(function(){
+	   			$('#second').slideToggle("slow");
+	   			$('#first').slideToggle("slow");
+	   		});
+	   	
+	   	
+$('button').click(function(){
+	   			$('#second').stop();
+	   		});
+});
+
+	   </script>
+</head>
+<body>
+<button>stop</button>
+
+<h1>slide examples</h1>
+<div id="first">click me to display</div>
+<div id="second">hello world !!!!! welcome to NIIT</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		div{
+			height: 300px;
+			width: 300px;
+			position: relative;
+			background: #000;
+			display: none;
+		}
+
+		span{
+			display: block;
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top:15px;
+			left:15px;
+			background: #f00;
+			display: none;
+			transition:all 3s ease;
+		}
+
+		span.rotate{
+			transform:scale(0.8,0.8);
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<div>
+		<span></span>
+	</div>
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(function(){
+			$("body").find("div").fadeIn(2000).children("span").delay(3000).fadeIn(2000).animate({
+					"left":"40px",
+					"top":"40px"
+				},2000,function(){
+					$(this).addClass('rotate');
+				});
+		});
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+Physical Tags:
+
+<p> </p> -> Paragraph
+
+	Heading Tags:
+
+	<h1></h1> to <h6> </h6>
+
+<b> </b> -> bold
+<i> </i> -> italic
+<u> </u> -> underline
+
+<s> </s> -> strike
+
+<tt> </tt> -> typewriter font
+<em> </em> -> letter font
+
+<hr> -> horzontal line
+<br> -> Break Line
+
+<sub> </sub> -> subscript
+
+<sup> </sup> -> superscript
+
+

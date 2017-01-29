@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" src="5th.css"></style>
+</head>
+<body>
+<div class="gif">
+	<ul>
+		<li><a href="#">HOme</li>
+		<li><a href="#">Gallary</li>
+		<li><a href="#">About</li>
+		<ul>
+		<li><a href="#">item 1</li>
+		<li><a href="#">item 2</li>
+		<li><a href="#">item 3</li>
+		<li><a href="#">item 4</li>
+		<li><a href="#">item 5</li>	
+		</ul>
+		</li>
+		<li><a href="#">gallery</li>
+		<li><a href="#">Blog</li>
+	</ul>
+</div>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function){
+      $(".gif > ul li ").hover(function){
+      	$(this).find("ul").slideDown(1000);
+      },function(){
+      	$(this).find("ul").slideUp(1000);
+      }
+      $(".gif > ul li ").hover(function){
+      }
+	}
+</script>
+</body>
+</html>
+		

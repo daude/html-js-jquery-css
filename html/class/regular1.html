@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="r.js">
+	</script>
+</head>
+<body>
+<form>
+	<label for="">First and Last Name</label><br>
+	<input type="text" name="user" id="uName" placeholder="Enter username" onkeyup="validateName()"><span id="msgName"></span>
+	<br><br>
+
+	<label for="">E_mail</label><br>
+	<input type="text" name="email" id="gomja" placeholder="Enter Email" onkeyup="validateEmail()"><span id="msgEmail"></span>
+
+	<br><br>
+      Country
+      <select id="country" onchange="countryCode()">
+            <script type="text/javascript">
+            var country = new Array("America","Japan","Nepal","Canada","Australia","India");
+
+            for(var i=0;i<country.length;i++)
+            {
+                  document.write("<option value="+country[i]+">"+country[i]+"</option>");
+            }
+            </script>
+            <option selected>--Choose--</option>
+      </select>
+      <input type="text" id="code"> 
+<br>
+	<input type="button" name="submit" value="Submit" onclick="validate()">
+
+</form>
+</body>
+</html>

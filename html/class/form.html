@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Information</title>
+	<style type="text/css">
+	body{
+		background-color: green;
+	}
+		th{width: 150px;}
+		td{width: 50px; }
+		.top{font-size: 12px;}
+		table{margin: 0 auto;
+			box-shadow: 3px 7px 12px;}
+			
+	</style>
+	<script type="text/javascript">
+		function show() 
+		{
+			var firstname,lastname,address,password,re_password,sex,faculty,E_mail;
+			firstname=document.getElementById('na').value;
+			lastname=document.f1.lastname.value;
+			address=document.f1.address.value;
+			password=document.f1.password.value;
+			re_password=document.f1.re_password.value;
+			sex=document.f1.sex.value;
+			faculty=document.f1.faculty.value;
+			E_mail=document.f1.E_mail.value;
+
+			document.write("Your FirstName is  "+firstname+"</br>");
+			document.write("Your lastName is  "+lastname+"</br>");
+			document.write("Your Address is  "+address+"</br>");
+			document.write("Your Password is  "+password+"</br>");
+			document.write("Your re_password is  "+re_password+"</br>");
+			document.write("Your are  "+sex+"</br>");
+			document.write("Your faculty is  "+faculty+"</br>");
+			document.write("Your E_mail is  "+E_mail+"</br>");
+			return false;
+
+			}
+
+			
+
+	</script>
+</head>
+<body>
+
+<form method="post" onsubmit="return show()">
+<tr>
+			<th><table height="200px" width="400px" border="1px" bgcolor="skyblue">
+	
+		<tr>
+			<th class="top" colspan="2">Information</th>
+		</tr>
+		<tr>
+			<th>firstname</th>
+			<td><input type="text" name="firstName" id="na" size="32px"></td>
+		</tr>
+		<tr>
+			<th>lastname</th>
+			<td><input type="text" name="lastname" id="na" size="32px"></td>
+		</tr>
+		<tr>
+			<th>address</th>
+			<td><input type="text" name="address" id="na" size="32px"></td>
+		</tr>
+		<tr>
+		<th>Password</th>
+			<td><input type="password" name="password" id="pas" size="32px"></td>
+		</tr>
+		<tr>
+			<th>re_password</th>
+			<td><input type="password" name="re_password" id="na" size="32px"></td>
+		</tr>
+		<tr>
+			<th>sex</th>
+			<td><input type="text" name="sex" id="na" size="32px"></td>
+		</tr>
+		
+		<tr>
+			<th>faculty</th>
+			<td><input type="text" name="faculty" id="na" size="32px"></td>
+		</tr>
+		<tr>
+			<th>E_mail</th>
+			<td><input type="email" name="mail" id="em" size="32px"></td>
+		</tr>
+		<tr>
+			<th colspan="2"><input type="submit" value="Submit"></th>
+					</tr>
+	
+	</table>
+	</form>
+
+
+
+</body>
+</html>  

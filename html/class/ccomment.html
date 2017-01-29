@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function comment()
+{
+			if(comment.length==0)
+			{
+				displayMessage("Enter comment..");
+				return false;
+			}
+			else if(comment.match(/^[a-z A-Z]{4,100}$/))
+	{
+		displayMessage("valid");
+		return true;
+	}
+	else
+	{
+		displayMessage("invalid");
+		return false;
+	}
+}
+function validatecomment()
+{
+	if(validatecomment())
+	{
+		window.open('http://www.google.com');
+		return true;
+	}
+}
+
+	</script>
+
+</head>
+<body>
+<label for="">comment</label><br>
+<textarea name='comment' id='comment'></textarea><br/>
+<span id="cmmt"></span>
+<br>
+<input type="submit" name="submit" value="submit" onclick="validatecomment()">
+</body>
+</html>

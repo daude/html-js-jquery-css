@@ -1,0 +1,13 @@
+hw:(form)
+user
+password
+e-mail
+result:your name is ram
+       ur psw is...
+       ur email is...
+
+
+promt[]
+promt[]
+promt[]
+   result

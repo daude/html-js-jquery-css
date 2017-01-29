@@ -1,0 +1,28 @@
+=loren()
+=rand()
+
+marquee tag:
+
+- it is used to mive text,images and so on.
+- <marquee> </marquee> tag is used.
+* eg:
+<marquee>Nepal is a water resources</marquee>
+
+Attributes:
+
+behavior = " scroll"
+            " slide" "alternate"
+
+
+direction = left,right,up,down
+
+
+width:
+height:
+bgcolor:
+scrollamount:
+scrolldeley:
+loop:
+
+ 
+

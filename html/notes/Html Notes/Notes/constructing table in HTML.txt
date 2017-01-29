@@ -1,0 +1,54 @@
+constructing tabel:
+Tags:-
+ <table>
+
+<tr> </tr> -> table row
+<th> </th> -> table heading
+<td> </td> -> table data
+
+</table> 
+
+attribures: 
+ bgcolor
+ align
+cellspacing
+cellpadding 
+border
+
+ *for example*
+<html>
+<head>
+	<title> constructing table in html </title>
+</head>
+<body>
+	<table>
+		
+		<table border="1px" align="center" bgcolor="purple" cellspacing="10px" cellpading="15px">
+<tr> 
+
+ <caption > <b>expenditure sheet  </b> </caption>
+	<th> sn </th>
+	<th> particulars </th>
+	<th> amount (rs)</th>
+
+
+</tr>
+<tr>
+	<td> 1 </td>
+	<td> salary </td>
+	<td> 200000 </td>
+</tr>
+<tr> 
+	<td> 2</td >
+		<td> travel </td>  
+		<td> 100000 </td>
+<tr> 
+	<td> 3 </td>
+	<td> fooding </td>
+	<td> 500000 </td> 
+</tr>
+</body>
+
+ </html>
+	
+		

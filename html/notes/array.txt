@@ -1,0 +1,8 @@
+arrays:
+- array is a special set of variable which can hold one or more valuesj at a time.
+- syntex;
+var array_name=[first_value,second_value,third_value,....];
+
+or 
+
+var array_name= new Array (first_value,second_value,...];

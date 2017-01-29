@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="dropdown.css">
+</head>
+<body>
+
+	<div class="navbar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a>
+				<ul class="dropdown small">
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a>
+
+						<ul class="sub-dropdown">
+							<li><a href="#">Sub Menu Item</a></li>
+							<li><a href="#">Sub Menu Item</a></li>
+							<li><a href="#">Sub Menu Item</a></li>
+							<li><a href="#">Sub Menu Item</a></li>
+						</ul>
+
+					</li>
+					<li><a href="#">Item 4</a></li>
+					<li><a href="#">Item 5</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Blog</a>
+				<ul class='dropdown'>
+					<li><a href="#">Recent Blog</a></li>
+					<li><a href="#">Blog Categories</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".navbar > ul > li").hover(function(){
+
+		$(this).find("ul.dropdown").slideDown(200);
+		},function(){
+			$(this).find("ul.dropdown").slideUp(200);
+		});
+
+		$(".navbar  ul.dropdown > li").hover(function(){
+			
+			$(this).find(".sub-dropdown").fadeIn(400);
+		},
+		function(){
+			$(this).find(".sub-dropdown").fadeOut(400);
+		});
+	});
+</script>
+</body>
+</html>

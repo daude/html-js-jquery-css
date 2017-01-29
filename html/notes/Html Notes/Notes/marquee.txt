@@ -1,0 +1,18 @@
+Marquee:
+tag:-
+<marquee> </marquee>
+attributes:
+
+ type
+ attributes:-
+bgcolor="red"
+width="50%"
+height="100px"
+ 
+*for example*
+  
+<marquee bgcolor="red" width="50%" height="100px">
+
+ moving text 
+
+</marquee>

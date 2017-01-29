@@ -1,0 +1,37 @@
+assainment operator:
+- = assignment
+- += assignment
+- -= sub assignment
+- /= div """""
+- *= multi ""
+- %= modulus  " "
+
+conditional operator:
+1. > greater than
+2. < less than
+3. >= greater or equal
+4. <= less or equal
+5. == equal value
+6. === equal value and type
+7. != not equal
+8. !== not equal or type
+
+logical operator:
+1. AND (&&) operator 
+2. OR (||) operator
+3. NOT (!) operator 
+
+
+ternary operator:
+
+var a=condition? "true": "false";
+
+datatypes:
+1. interger (18,18.5)
+2. strings  ("--strings--")
+3. array    (multiple value used to store in a single variable)
+4. object   (multiple object)
+
+
+Array Example:
+var Ram = [ Age="18", Address="ktm", contact="98"];

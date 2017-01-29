@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Basic Form Validation</title>
+
+	<style type="text/css" >
+		body{
+			background-color: purple;
+		}
+	</style>
+
+	<script type="text/javascript" src="function validForm.js"></script>
+</head>
+<body>
+<div>
+<align = "center">
+<form method="post" onsubmit="return validForm()">
+	<p id="error" class="red"></p>
+	<p>Username</p>
+	<p><input type="text" name="user" id="usr" placeholder="Enter username"></p>
+
+	<p>Password</p>
+	<p><input type="password" name="pass" id="pwd" placeholder="Enter password"></p>
+
+	<p>Confirm Password</p>
+	<p><input type="password" name="cpass" id="cpwd" placeholder="Enter re-password"></p>
+
+	<p>Email</p>
+	<p><input type="email" name="email" id="eml" placeholder="Enter email"></p>
+
+	<p>Phone</p>
+	<p><input type="text" name="phone" id="phn" placeholder="Enter phone number"></p>
+
+	<p>Country</p>
+	<p><select id="con">
+		<option value="default" selected>--Choose--</option>
+		<option value="aus">Australia</option>
+		<option value="nep">Nepal</option>
+		<option value="jap">Japan</option>
+		<option value="chi">China</option>
+		<option value="ame">America</option>
+	</select></p>
+
+	<p><input type="submit" name="sBtn" value="Submit Form"></p>
+
+</form>
+</align>
+</body>
+</html>

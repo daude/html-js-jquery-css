@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="form-data">
+		<div id="form-input">
+			<input type="text" name="data[]" >
+		</div>
+		<input type="submit" value="Send">
+
+	</form>
+	<button id="addelem">Add New Name</button>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("#addelem").on("click",function(){
+				$("#form-data #form-input").append("<input type='text' name='data[]'>");
+			});
+
+		});
+
+	</script>
+</body>
+</html>

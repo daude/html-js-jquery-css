@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form validation</title>
+	<style type="text/css">
+		body
+		{
+			background-color: skyblue;
+			background-size: 800px;
+		}
+	</style>
+</head>
+<body>
+<div>
+<align="center">
+<form method="post" align="center">
+	<p id="error" class="red"></p>
+	<p>username</p>
+	<input type="text" onkeyup="myKeyUpTest()" name="user" id="usr" placeholder="Enter the name"></p>
+	<p>password</p>
+	<input type="password" name="pass" id="pwd" placeholder="Enter the password"></p>
+	<p>Re-password</p>
+	<input type="password" name="pass" id="pwd" placeholder="Enter the password"></p>
+	<p>E-mail</p>
+	<input type="text" name="E-mail" id="E-mail" placeholder="Enter the E-mail"></p>
+	<p>phone no</p>
+	<input type="text" name="phone" id="phone" placeholder="Enter the phone no"></p>
+	<p>country</p>
+	<p>
+		<select id="country">
+			<option value="Nepal">Nepal</option>
+			<option value="Japam">Japan</option>
+			<option value="china">china</option>
+			<option value="America">America</option>
+			<option value="canada">canada</option>
+		</select>
+	</p>
+	<p><input type="button" onClick="myValidation()" id="submitBtn" name="submit" value="Submit Form"></p>
+	
+</form>
+</align="center"></div>
+<script type="text/javascript" src="f1.js"></script>
+</body>
+</html>

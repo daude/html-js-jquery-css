@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+</head>
+<body>
+<marquee behavior="alternate" bgcolor="#747474" font="">Get It!!</marquee>
+<div style="background-color:skyblue">
+<form method="post"  action="form.html"> 
+<fieldset>
+	
+	<legend>Student Registration form</legend>
+	<label for = "user"> Student Name: </label>  <input type="text"  size="25" maxlength="20" name ="Studentname" id = "StnName" placeholder ="Enter your Name"></br>
+	<br><br>
+	<label for = "Roll"> Roll No:</label> <input type="text" size="10" name="Rollno" id="Rollno" placeholder ="Roll no."></br>
+<br><br>
+	<label for ="Faculty"> Faculty:</label>
+	 <select name="Faculty">
+	 <option hidden>Choose</option>
+	 <option value="ComputerEngineering">Computer Engineering</option>
+	 <option value="CivilEngineering">Civil Engineering</option>
+	 <option value="ElectronicEnginnering">Electronic Engineering</option>
+	 <option value="Art">Art</option>
+	 </select>
+	 </br>
+	 <br><br>
+
+	 <label for="Dateofbirth">Date of birth:</label><input type="date" type="month" type="year"|>
+	 <br>
+<br><br>
+
+
+
+	<label for ="Email">Email:</label><input type="email" name="email" id="email" placeholder="Enter email"> <br>
+	<br><br>
+
+	Gender: <input type="radio" name="gender" value="male" id="Male">
+		<label for ="Male">Male</label>
+ 		 <input type="radio" name="gender" value="female" id="female">
+ 		 <label for ="female">Female</label> </br>
+ 		 <br><br>
+ 	
+ 	<label for ="Description"></label> Description : <textarea rows="5" cols="20" placeholder ="Enter Description"></textarea></br>
+<br><br>
+
+ <label for="Registor"></label><input type="submit" name="submit" value="Register">
+ <input type="reset">
+ <button type="button">Cancel</button>
+
+
+
+</fieldset>
+</form>
+</div>
+</body>
+</html>

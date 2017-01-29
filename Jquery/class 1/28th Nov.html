@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+    body{
+        background-color: skyblue;
+    }
+</style>
+	<script type="text/javascript" src="jquery-3.1.1.js">
+		
+	</script>
+	<script type="text/javascript">
+		$("ducument").ready(function(){
+			$("#showHide").click(function(){
+
+				var btn=$('#showHide');
+				var input =$('#hello')
+				if(btn.text()=="show password")
+                   {
+					btn.html("hide password");
+					input.attr('type','text')
+					//alert("Value: " + $("#hello").val());
+					
+				}
+				else
+				{
+					if(btn.html()=="hide password")
+					{
+						btn.text("show password");
+						input.attr('type','password')
+						//alert("Value: " + $("#hello").val());
+						
+					}
+				}
+
+			});
+		})
+	</script>
+
+</head>
+<body>
+<p>password</p>
+<input type="password" name="password" id="hello" Value="">
+<button id="showHide">show password</button>
+</body>
+</html>

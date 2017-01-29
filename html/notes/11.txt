@@ -1,0 +1,11 @@
+conditional statement:
+- conditional statement and to perform different action 
+based on different condition
+[if
+else
+else if
+switch]
+
+1. if specify a block of code of condition is true.
+2. else " " " " if condition is false.
+3. else if " " " " if first condition is false.

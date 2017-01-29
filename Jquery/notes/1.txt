@@ -1,0 +1,22 @@
+Jquery:
+> jquery is simple,"write less,do more javascript library.
+> Jquery.com(jquery-3)
+
+#features:
+- html/dom manipulation
+- css manipulation
+- html event maipulation
+- effects,annimations
+- AJax( Asynchronous javascript and xml)
+
+Syntax:
+- $(selector).action();
+$(to define|access jquery.
+selector(find html|element)
+action ( to perform action)
+
+javascript library or framework:
+- Jquery.js
+- Node.js
+- Angular.js
+- backbone.js

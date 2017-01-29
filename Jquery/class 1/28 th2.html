@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#showHide").click(function(){
+
+				var btn =$('#showHide');
+				if(btn.text()=="show"){
+					btn.html("hide");
+					$('#container').slideDown(2000);
+				}
+				else
+				{
+					if(btn.html()=="hide")
+					{
+						btn.text("show");
+						$('#container').slideUp(2000);
+					}
+				}
+
+
+			});
+		});
+	</script>
+</head>
+<body>
+<button id="showHide">show</button>
+<div id="container" style="height: 500px; width: 300px; background-color: red; display: none">
+
+	Canada (Listeni/ˈkænədə/; French: [ka.na.dɑ]) is a federal state in the northern half of North America. Its ten provinces and three territories extend from the Atlantic to the Pacific and northward into the Arctic Ocean, covering 9.98 million square kilometres (3.85 million square miles), making it the world's second-largest country by total area and the fourth-largest country by land area. Canada's border with the United States is the world's longest land border. The majority of the country has a cold or severely cold winter climate, but southerly areas are warm in summer. Canada is sparsely populated, the majority of its land territory being dominated by forest and tundra and the Rocky Mountains. About four-fifths of the country's population of 36 million people is urbanized and live near the southern border. Its capital is Ottawa, its largest metropolis is Toronto; other major urban areas include Montreal, Vancouver, Calgary, Edmonton, Quebec City, Winnipeg and Hamilton.
+</div>
+</body>
+</html>

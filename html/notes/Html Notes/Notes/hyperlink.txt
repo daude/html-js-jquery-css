@@ -1,0 +1,20 @@
+hyperlink:
+  tag:- <a> 
+</a>
+attributes:
+href 
+title 
+
+FOR EXAMPLE:
+<html>
+<head>
+<TITLE > HYPERLINK</TITLE>
+</head>
+<body>
+<A HREF="ANY" TITLE="YOUTUBE"> CLICK HERE </A>
+</body>
+
+</html>
+
+
+

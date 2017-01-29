@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+		<select id="colorSelector">
+			<option value="">Choose Color</option>
+			<option value="red">Red</option>
+			<option value="green">Green</option>
+			<option value="orange">Orange</option>
+			<option value="purple">Purple</option>
+		</select>
+
+	<script src="jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(function(){
+			$("#colorSelector").on("change",function(){
+				var color=$(this).val();
+				$("body").css("background-color",color);
+			});
+		});	
+
+	</script>
+</body>
+</html>

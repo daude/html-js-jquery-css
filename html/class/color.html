@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var colors=Array("red","blue","green","pink","yellow");
+		var colorIndex=0;
+		function bgcolor()
+		{
+			document.bgColor=colors[colorIndex];
+			colorIndex=(colorIndex+1)%colors.length;
+		}
+		function colorChange()
+		{
+			setInterval(bgcolor,1000);
+		}
+	</script>
+</head>
+<body onload="colorChange()">
+
+</body>
+</html>

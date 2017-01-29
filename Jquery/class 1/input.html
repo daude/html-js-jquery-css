@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div.menu{
+          position: fixed;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+		}
+		div.pa{
+    position: fixed;
+    left: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+#menu{
+          position: fixed;
+    left: 0;
+    width: 200px;
+    border: 3px solid #73AD21;
+		}
+		#pa{
+    position: fixed;
+    right: 0;
+    width: 1100px;
+    border: 3px solid #73AD21;
+}
+body{
+	background-color: green;
+}
+
+
+	</style>
+</head>
+<body>
+<div id="menu">
+<input type="checkbox" id="menu-toggle">
+<label forl="menu-toggle">check</label>
+	<ul>
+		<li><a href="#">HOme</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Gallery</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Comment</a></li>
+	</ul>
+</div>
+<div id="pa">
+<p> required URL parameter specifies the URL you wish to request.
+
+The optional callback parameter is the name of a function to be executed if the request succeeds.
+
+The following example uses the $.get() method to retrieve data from a file on the server:The required URL parameter specifies the URL you wish to request.
+
+The optional data parameter specifies some data to send along with the request.
+
+The optional callback parameter is the name of a function to be executed if the request succeeds.
+
+The following example uses the $.post() method to send some data along with the request:
+
+ExampleThe first parameter of $.post() is the URL we wish to request ("demo_test_post.asp").
+
+Then we pass in some data to send along with the request (name and city).
+
+The ASP script in "demo_test_post.asp" reads the parameters, processes them, and returns a result.
+
+The third parameter is a callback function. The first callback parameter holds the content of the page requested, and the second callback parameter holds the status of the request.
+
+Tip: Here is how the ASP file looks like ("demo_test_post.asp"):
+
+<%
+dim fname,city
+fname=Request.Form("name")
+city=Request.Form("city")
+Response.Write("Dear " & fname & ". ")
+Response.Write("Hope you live well in " & city & ".")
+%>The first parameter of $.post() is the URL we wish to request ("demo_test_post.asp").
+
+Then we pass in some data to send along with the request (name and city).
+
+The ASP script in "demo_test_post.asp" reads the parameters, processes them, and returns a result.
+
+The third parameter is a callback function. The first callback parameter holds the content of the page requested, and the second callback parameter holds the status of the request.
+
+Tip: Here is how the ASP file looks like ("demo_test_post.asp"):
+
+<%
+dim fname,city
+fname=Request.Form("name")
+city=Request.Form("city")
+Response.Write("Dear " & fname & ". ")
+Response.Write("Hope you live well in " & city & ".")
+%></p></div>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+create db daude
+
+use db daude:
+create table tbl_ staff(
+id int primary key auto_increment,
+name varchar(30),
+email varchar(30) unique key,
+phone bigint,
+gender enum("m","f"),
+date_of_join date,
+last_update timestamp
+);
+
+
+--------------------------------------------
+
+1. to rename a table:
+   rename table <old table name> to <new table name>
+e.g:
+  rename table tbl_staff to tbl_student  
+
+2. to delete a table:
+   drop table <table name>
+e.g:
+   drop table tbl_student; 
+

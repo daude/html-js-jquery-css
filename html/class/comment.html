@@ -1,0 +1,139 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function displayMessage(message,id,co)
+		{
+			document.getElementById(id).innerHTML=message;
+
+			document.getElementById(id).style.color=co;
+		}
+      
+
+      function validateName()
+      {
+      		var name = document.getElementById('uName').value;
+
+      		if(name.length==0)
+      		{
+      			displayMessage("Enter username..","msgName","red");
+      			return false;
+      		}
+
+      		else if(!name.match(/^[a-zA-Z]{3,10}[\s]{1}[a-zA-Z]{4,10}$/))
+      		{
+
+      			displayMessage("Invalid..first name and last name must include","msgName","red");
+      			return false;
+      			
+      		}
+
+      		else
+      		{
+      			displayMessage("Valid!!","msgName","green");
+      			return true;
+      		}
+      }
+
+      function validateEmail()
+      {
+      	var email = document.getElementById('eName').value;
+
+      	if(email.length==0)
+      	{
+      		displayMessage("Enter email..","msgEmail","red");
+      		return false;
+      	}
+
+      	else if(email.match(/^[a-zA-Z\-\_\.0-9]*\@{1}[a-z]{4,10}*\.{1}[a-z]{2,9}$/))
+      	{
+      		displayMessage("valid email","msgEmail","green");
+      		return true;
+      	}
+      	else
+      	{
+      		displayMessage("Invalid Email","msgEmail","red");
+      		return false;
+      	}
+      }
+
+      function countryCode()
+      {
+            var con = document.getElementById('country');
+
+            if(con.value=="America")
+            {
+                  document.getElementById('code').value="+01";
+                              }
+
+            else if(con.value=="Nepal")
+            {
+               document.getElementById('code').value="+977";  
+            }
+      }
+
+      function validateMessage()
+      {
+            var comment = document.getElementById('mess').value;
+
+            var max=50;
+            var limit = max-comment.length;
+
+            if(comment.length>max)
+            {
+                  displayMessage(limit+"character accessed!!","msgCom","red");
+                  return false;
+            }
+            else
+            {
+                  displayMessage(limit+"More character","msgCom","green");
+                  return true;
+            }
+      }
+
+
+      function validate()
+      {
+      	if(validateName() && validateEmail() && countryCode())
+      	{
+      		window.open('http://www.google.com');
+      		return true;
+      	}
+      }
+
+	</script>
+</head>
+<body>
+<form>
+	<label for="">First and Last Name</label><br>
+	<input type="text" name="user" id="uName" placeholder="Enter username" onkeyup="validateName()"><span id="msgName"></span>
+	<br><br>
+
+	<label for="">Email</label><br>
+	<input type="text" name="email" id="eName" placeholder="Enter Email" onkeyup="validateEmail()"><span id="msgEmail"></span>
+
+	<br><br>
+      Country
+      <select id="country" onchange="countryCode()">
+            <script type="text/javascript">
+            var country = new Array("America","Japan","Nepal","Canada","Australia","India");
+
+            for(var i=0;i<country.length;i++)
+            {
+                  document.write("<option value="+country[i]+">"+country[i]+"</option>");
+            }
+            </script>
+            <option selected>--Choose--</option>
+      </select>
+      <input type="text" id="code"> 
+<br>
+
+<label>Message</label><br>
+      <textarea id="mess" onkeyup="validateMessage()"></textarea><span id="msgCom"></span>
+      <br>
+
+	<input type="button" name="submit" value="Submit" onclick="validate()">
+
+</form>
+</body>
+</html>

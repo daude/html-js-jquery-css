@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		textarea{
+			height: 100px;
+		}
+		body{
+			background-color: skyblue;
+		}
+	</style>
+	<script type="text/javascript">
+		function txt()
+		{
+		var x = document.getElementById('text1');
+
+		var y = document.getElementById('text2');
+
+		y.value=x.value;
+		}
+	</script>
+</head>
+<body>
+<textarea id="text1" onkeypress="txt()"></textarea>
+<textarea id="text2"></textarea>
+</body>
+</html>

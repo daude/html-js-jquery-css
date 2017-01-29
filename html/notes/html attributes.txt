@@ -1,0 +1,153 @@
+<br>line break 
+
+<hr> create horizontal line
+
+../ eit present directory
+
+<bg colour="colour"> to give back ground colour
+
+<b>bold</b>
+
+<u>underline</u>
+
+<i>italics</i>,<em>italics</em>
+
+<center> allign tet t center</center>
+
+<p>create paragraph</P>
+
+<sup>super script</sup>
+
+<sub>subs script</sub>
+----------------------------------------------------
+font
+
+
+	<font size="size"> to set the size of the font</font>
+
+	<font colour="colour"> to set the colour of the text</font>
+	<font family="font name"> to change fonts
+
+-----------------------------------------------------
+<img> to link image
+	"src=filename"	image location
+	"alt"		for alternate text for image
+	"height"
+	"width"
+------------------------------------------------------
+List tag to create list
+	<ol> create order list </ol>
+	<ul> create unorder list </ul>
+		
+		<ol> type ="a"> list numbering starts with a (a,A,1,i etc)
+		<ol> type ="1"> list numbering starts with 1
+			<li>item names</li>
+		</Ol>
+
+		<ul type ="circle"> list starts with circle   (suare,disc etc)
+			<li> items on the list</li>
+		</ul>
+----------------------------------------------------------------
+<a> creates huperlink
+	<a href="link name"> click me</a>  
+	<a href="#bottom"> go to bottom of the page </a>
+	(at bottom  type < a name="bottom"> </a>
+	
+	trget= blank,new page,self,same,present
+
+	<a href="list.html" target="_blank">Click me</a>
+	<a href="list.html" target="_self">Click me</a>
+	<a href="list.html" target="_parent">Click me</a>
+
+	<a href="image/22_626RS_WFM12.jpg"><img src="D21-42_small.jpg"></a>
+
+---------------------------------------------------------
+<marquee> create moving text,pic etc </marquee>
+	attributes
+		behaviour="scroll"
+			 ="slide"
+			 ="alternate"
+		direction="left"
+			 ="right"
+			 ="up"
+			 ="down"
+		height
+		width
+		bg colour (backgeound colour)
+		scroll amount
+		scroll dlay
+		loop
+
+---------------------------------------------------------
+
+<form>creates form to clletc data frm user
+	to types of form:
+	<form method="get"> used for normal data
+	<form method="post"> used for important data
+
+	ATTRIBUTES USED
+	
+	TEXT 	 Used to enter datas in alphabets and no eg, name,phone no. etc
+		
+		<input type="text" name ="firstName" id="firstName" placeholder="enter your first name">(placeholder is used to inform what to eneter and
+
+														is over written by entered data.)
+	
+
+	RADIO	used to select one and only one data from given multiple choices
+	
+		<Input type="radio" name="gender" value="male">male
+		<Input type="radio" name="gender" value="female">female
+		<Input type="radio" name="gender" value="other">other</Input>
+	
+
+	TEXTAREA  To input datas like comments, note,suggestion etc
+		
+		<Textarea rows="5" cols="20"></Textarea><br><br>
+	
+
+	CHECKBOX	To make input mutilple choices from given choices
+	
+		<input type="checkbox" name="fac">PHP
+		<input type="checkbox" name="fac">HTML
+		<input type="checkbox" name="fac">.NET
+		<input type="checkbox" name="fac">JAVA
+
+	SUBMIT BUTTON		To submit the form or datas
+	
+		<input type="submit" name="subbmit button" value="Register">
+		
+
+	BUTTON		To add different buttons
+	
+		<button type="button">Cancel</button>
+
+	
+
+	RESET		To erase all entered information and load new form
+		
+		<input type="reset">
+	
+
+	FILE		To upload a file in the form.		
+
+		<input type="file">
+
+
+	SELECT		To select my various multiple choices given. eg. country.
+
+		<select name="country">
+				<option hidden>----select your country----</option>
+				<option value="Nepal">Nepal</option>
+				<option value="Ameica">America</option>
+				<option value="Japan">Japan</option>
+				<option value="China">China</option>
+				<option value="Australia">Australia</option>
+				<option value="England">England</option>
+				<option value="Pakistan">Pakistan</option>
+				</select>
+
+	
+	REQUIRED	makes the user compulsary to enete the data.
+
+		<input type ="password" name = "pass" id= "pass" required>	

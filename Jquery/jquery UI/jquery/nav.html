@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		#menu{
+			background: #B0812D;
+			padding:25px 15px;
+		}
+		#menu ul{
+			clear: both;
+			list-style: none;
+			padding:0;
+			display: none;
+			text-align: center;
+		}
+		#menu ul li a{
+			text-decoration: none;
+			font:14px Arial;
+			padding:7px 15px;
+			display: block;
+			text-transform: uppercase;
+			color:#fff;
+			border-bottom:1px solid #8E6A29;
+		}
+		#menu ul li a:hover{
+			background: #900;
+		}
+
+		#menu input[type="checkbox"]{
+			display: none;
+		}
+
+		#menu label{
+			height: 30px;
+			width: 30px;
+			display: block;
+			background: url(menu.png) no-repeat;
+			position: relative;
+			float: right;
+			top:-15px;
+		}
+
+		
+
+		h1::before{
+			content:"";
+			border:5px solid #dedede;
+			display: block;
+		}
+		h1::after{
+			content:"";
+			border:5px solid #dedede;
+			display: block;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>Introduction </h1>
+<div id="menu">
+	<input type="checkbox" id="menu-toggle">
+	<label for="menu-toggle"></label>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Gallery</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Contact</a></li>
+
+	</ul>
+</div>
+
+
+<p>
+
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+	$("#menu-toggle").change(function(){
+		if($(this).is(":checked")){
+			$("#menu ul").slideDown();
+		}else{
+			$("#menu ul").slideUp();
+		}
+	});
+</script>
+</body>
+</html>

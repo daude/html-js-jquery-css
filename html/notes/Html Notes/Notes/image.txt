@@ -1,0 +1,22 @@
+image :
+ tag:- <img>
+attributes:(INSIDE tag)
+<img src, height, width , alt, align="left" or "right">
+
+src  - image source 
+height  - height of image 
+width  - of image
+align - left or right only  
+alt  - to show messages if image unable to load
+
+*for example*  
+<html>
+<head>
+<title> my image </title>
+</head>
+<body>
+<img src="image/image.jpg" height="500px" width="500px" alt="sorry" align="left">
+
+</body>
+
+</html>

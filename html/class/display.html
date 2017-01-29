@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	body{
+		color: red;
+		background-color: skyblue;
+	}
+</style>
+	<title></title>
+	<h1>showing Time</h1>
+	<hr>
+	<script type="text/javascript">
+	function displayTime()
+	{
+	var time=new Date();
+	var t=time.toLocaleTimeString();
+	document.getElementById('display').innerHTML=t;
+	}
+	setInterval(displayTime,1000);
+	window.onload(displayTime);
+	</script>
+</head>
+<body>
+<button>
+<p id="display">welcome in Time</p></button>
+</body>
+</html>

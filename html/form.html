@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+</head>
+<body>
+<form method="post"  action="StudentRegistrationForm.html"> 
+<fieldset>
+<legend>Registration Form</legend>
+ Firstname: <input type="text" name="username" id="user" placeholder="Enter Firstname"> <br>
+
+ Email: <input type="email" name="email" id="email" placeholder="Enter email"> <br>
+
+ Phone: <input type="text" name="phone" id="phone" placeholder="Enter phone number"> <br>
+
+ Gender: <input type="radio" name="gender" value="male"> Male
+ 		 <input type="radio" name="gender" value="female"> Female
+ 		 <input type="radio" name="gender" value="other"> Other <br>
+
+ Date of Birth: <input type="date" name="dob"><br>
+
+ Country: <select name="country">
+ <option  hidden> ---Choose--- </option>
+ 	<option value="nepal"> Nepal</option>
+ 	<option value="japan"> Japan</option>
+ 	<option value="korea"> Korea</option>
+ 	<option value="america"> America</option>
+ 	<option value="india"> India</option>
+ 	<option value="new"> Newzealand</option>
+ </select>  <br>
+
+ Faculty: <input type="checkbox" name="fac">Php
+ <input type="checkbox" name="fac">Java
+ <input type="checkbox" name="fac">Android
+ <input type="checkbox" name="fac">.Net
+
+ <br>
+
+ Comment: <textarea rows="5" cols="20"></textarea><br>
+
+ Upload File: <input type="file">
+
+ <br><br>
+
+ <input type="submit" name="submitBtn" value="Register">
+ <input type="reset">
+ <button type="button">Cancel</button>
+
+</fieldset>
+</form>
+</body>
+</html>

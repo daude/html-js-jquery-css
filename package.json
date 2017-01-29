@@ -1,0 +1,19 @@
+{
+  "name": "html-js-jquery-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daude/html-js-jquery-css.git"
+  },
+  "author": "david",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daude/html-js-jquery-css/issues"
+  },
+  "homepage": "https://github.com/daude/html-js-jquery-css#readme"
+}
